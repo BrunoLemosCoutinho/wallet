@@ -73,6 +73,7 @@ class Login extends React.Component {
     return (
       <section className="login">
         <div className="login-container">
+          <p>Email tipo nome@dominio.com e Senha com mais de 6 caracteres</p>
           <input
             id="teste"
             type="email"

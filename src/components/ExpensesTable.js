@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import Expense from './Expense';
+import './ExpensesTable.css';
 
 class ExpensesTable extends React.Component {
   render() {
@@ -9,7 +10,7 @@ class ExpensesTable extends React.Component {
     return (
       <table>
         <thead>
-          <tr>
+          <tr class="header">
             <th>Descrição</th>
             <th>Tag</th>
             <th>Método de pagamento</th>

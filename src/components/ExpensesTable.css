@@ -1,0 +1,14 @@
+table {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  margin: 10px;
+}
+
+th{ 
+    background: #eaf4e5;
+    color: #0e1709;
+    font-size: 1.1rem;
+    font-weight: 900;
+    padding: 10px;
+    overflow-wrap: break-word;
+    text-align: center;
+}

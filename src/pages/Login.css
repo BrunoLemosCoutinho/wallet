@@ -8,8 +8,6 @@ a:hover {
 }
 
 body {
-  font-family: "Verdana", sans-serif;
-  font-size: 14px;
   margin: 0px;
 }
 
@@ -88,4 +86,9 @@ header {
 
 .page-container {
   height: 100vh;
+}
+
+.login-container input, .login-container button {
+  font-family: "Verdana", sans-serif;
+  font-size: 14px;
 }

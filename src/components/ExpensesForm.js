@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { paymentMethods, categoryTags } from '../services/data';
 import { saveExpense, fetchCurrenciesNames } from '../actions';
+import './ExpensesForm.css';
 
 /*
 Dropdown binding from API inspired by
@@ -61,6 +62,7 @@ class ExpensesForm extends React.Component {
         <label htmlFor="value-input">
           Valor:
           <input
+            class="form-input"
             type="number"
             name="value"
             id="value-input"
@@ -124,6 +126,7 @@ class ExpensesForm extends React.Component {
         <label htmlFor="description-input">
           Descrição:
           <input
+            class="form-input"
             type="text"
             name="description"
             id="description-input"

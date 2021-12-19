@@ -71,28 +71,45 @@ class Login extends React.Component {
   render() {
     const { isLoginValid } = this.state;
     return (
-      <section className="login">
-        <div className="login-container">
-          <p>Email tipo nome@dominio.com e Senha com mais de 6 caracteres</p>
-          <input
-            id="teste"
-            type="email"
-            name="emailText"
-            data-testid="email-input"
-            placeholder="Digite seu email"
-            onChange={ (event) => this.handleInputChange(event) }
-          />
-          <input
-            type="password"
-            name="passwordText"
-            data-testid="password-input"
-            placeholder="Senha"
-            onChange={ (event) => this.handleInputChange(event) }
-          />
-          {isLoginValid ? this.renderEnabledLoginBtn() : this.renderDisabledLoginBtn()}
-        </div>
+      <div class="page-container">
+        <header>
+          Wallet
+        </header>
+        <section className="login">
+          <div className="login-container">
+            <p>Email tipo nome@dominio.com</p>
+            <p>Senha com mais de 6 caracteres</p>
+            <input
+              id="teste"
+              type="email"
+              name="emailText"
+              data-testid="email-input"
+              placeholder="Digite seu email (nome@dominio.com)"
+              onChange={ (event) => this.handleInputChange(event) }
+            />
+            <input
+              type="password"
+              name="passwordText"
+              data-testid="password-input"
+              placeholder="Senha (mais de 6 caracteres)"
+              onChange={ (event) => this.handleInputChange(event) }
+            />
+            {isLoginValid ? this.renderEnabledLoginBtn() : this.renderDisabledLoginBtn()}
+          </div>
+        </section>
+        <footer>
+          <span>
+            Bruno Lemos Coutinho
+          </span>
+          <a class="github" href="https://github.com/BrunoLemosCoutinho" target="_blank" rel="noopener noreferrer">
+            Github
+          </a>
+          <a class="linkedin" href="https://www.linkedin.com/in/brunolemoscoutinho/" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+          </a>
+        </footer>
 
-      </section>
+      </div>
     );
   }
 }
